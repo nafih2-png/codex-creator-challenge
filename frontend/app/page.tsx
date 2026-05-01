@@ -108,7 +108,7 @@ export default function HomePage() {
         | { detail?: string };
 
       if (!apiResponse.ok) {
-        throw new Error(data.detail ?? "Evaluation failed.");
+        throw new Error("Evaluation failed.");
       }
 
       setResult(data as EvaluationResponse);
